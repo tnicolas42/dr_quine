@@ -1,17 +1,21 @@
+SRC=Colleen.c
+
+NAME=Colleen
+
 all:
-	gcc Colleen.c -o Colleen -Wall -Wextra
+	gcc $(SRC) -o $(NAME) -Wall -Wextra -Werror
 
 clean:
-	rm Colleen
+	rm $(NAME)
 
 fclean: clean
 
 re: flcean all
 
 diff: all
-	@./Colleen > /tmp/tmp0
-	@cat Colleen.c > /tmp/tmp1
+	@./$(NAME) > /tmp/tmp0
+	@cat $(SRC) > /tmp/tmp1
 	@diff /tmp/tmp0 /tmp/tmp1
 
 exec: all
-	./Colleen
+	./$(NAME)
