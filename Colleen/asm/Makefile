@@ -7,9 +7,10 @@ all:
 	gcc $(SRC:.s=.o) -o $(NAME)
 
 clean:
-	rm $(NAME)
+	rm -f $(SRC:.s=.o)
 
 fclean: clean
+	rm -f $(NAME)
 
 re: flcean all
 
