@@ -4,7 +4,7 @@ NAME=Colleen
 
 all:
 	nasm -f macho64 $(SRC)
-	ld -macosx_version_min 10.7.0 -lSystem -o $(NAME) $(SRC:.s=.o)
+	gcc $(SRC:.s=.o) -o $(NAME)
 
 clean:
 	rm $(NAME)
