@@ -15,9 +15,8 @@ fclean: clean
 re: flcean all
 
 diff: all
-	@./$(NAME) > /tmp/tmp0
-	@cat $(SRC) > /tmp/tmp1
-	@diff /tmp/tmp0 /tmp/tmp1
+	@./$(NAME)
+	@diff $(SRC) Grace_kid.s
 
 exec: all
 	./$(NAME)
