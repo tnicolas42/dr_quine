@@ -15,8 +15,8 @@ fclean: clean
 re: flcean all
 
 diff: all
-	@./$(NAME)
-	@diff $(SRC) Grace_kid.s
+	./$(NAME)
+	diff $(SRC) Grace_kid.s
 
 exec: all
 	./$(NAME)
