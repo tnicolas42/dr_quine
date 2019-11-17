@@ -3,7 +3,7 @@ SRC=Sully.c
 NAME=Sully
 
 all:
-	gcc $(SRC) -o $(NAME) -Wall -Wextra -Werror
+	gcc $(SRC) -o $(NAME) -Wall -Wextra -Werror -DDECREMENT=0
 
 clean:
 	rm -f $(SRC:.c=.o)
