@@ -5,6 +5,7 @@ SRC=$(NAME).s
 all:
 	nasm -f macho64 -dDECREMENT=0 $(SRC)
 	gcc $(SRC:.s=.o) -o $(NAME)
+	rm $(SRC:.s=.o)
 
 clean:
 	rm -f $(SRC:.s=.o)
