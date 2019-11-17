@@ -8,7 +8,7 @@ all:
 
 clean:
 	rm -f $(SRC:.s=.o)
-	rm Grace_kid.s
+	rm Grace_kid.s || true
 
 fclean: clean
 	rm -f $(NAME)

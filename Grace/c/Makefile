@@ -6,7 +6,8 @@ all:
 	gcc $(SRC) -o $(NAME) -Wall -Wextra -Werror
 
 clean:
-	rm $(NAME)
+	rm $(NAME) || true
+	rm $(NAME)_kid.c || true
 
 fclean: clean
 
