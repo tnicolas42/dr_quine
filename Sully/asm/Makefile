@@ -3,7 +3,7 @@ NAME=Sully
 SRC=$(NAME).s
 
 all:
-	nasm -f macho64 $(SRC)
+	nasm -f macho64 -dDECREMENT=0 $(SRC)
 	gcc $(SRC:.s=.o) -o $(NAME)
 
 clean:
