@@ -8,6 +8,7 @@ all:
 
 clean:
 	rm -f $(SRC:.s=.o)
+	rm Grace_kid.s
 
 fclean: clean
 	rm -f $(NAME)
